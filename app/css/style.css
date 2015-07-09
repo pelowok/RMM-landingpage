@@ -266,7 +266,50 @@ img + .brand_name {
   margin-top: 5px;
 }
 
+/*==================      splashimg     ======================*/
+.splashimg {
+  padding-top: 117px;
+  padding-bottom: 170px;
+  background: #333333;
+
+}
+.splashimg_content {
+  position: relative;
+}
+.splashimg h2 {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 60px;
+}
+.splashimg h3 {
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 30px;
+  letter-spacing: 6.6px;
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .splashimg h2 {
+    font-size: 55px;
+    line-height: 50px;
+  }
+}
+@media (max-width: 479px) {
+  .splashimg {
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+  .splashimg h2 {
+    font-size: 26px;
+    line-height: 30px;
+  }
+  .splashimg h3 {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
 /*==================      Vide     ======================*/
+/* TODO deprecate vide CSS */
 .vide {
   padding-top: 117px;
   padding-bottom: 170px;
