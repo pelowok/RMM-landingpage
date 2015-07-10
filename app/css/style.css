@@ -727,7 +727,7 @@ label.invalid .error {
                      HEADER  Section
 ==========================================================*/
 header {
-  background: #666666;
+  /*background: #666666;*/
   text-align: center;
 }
 header *:not(.btn) {
@@ -812,7 +812,7 @@ main {
 
 /*==================  Backgrounds  ======================*/
 .bg-primary {
-  background: #4280c9;
+  background: #384c6d;
 }
 .bg-primary *:not(.btn) {
   color: #FFF;
@@ -827,7 +827,7 @@ main {
 }
 
 .bg-secondary {
-  background: #576475;
+  background: #999999;
   white-space: nowrap;
 }
 .bg-secondary h2 {
@@ -859,7 +859,7 @@ main {
 }
 
 .bg-secondary2 {
-  background: #333;
+  background: #666666;
 }
 .bg-secondary2, .bg-secondary2 h1, .bg-secondary2 h2, .bg-secondary2 h3, .bg-secondary2 h4, .bg-secondary2 h5, .bg-secondary2 h6 {
   color: #FFF;
