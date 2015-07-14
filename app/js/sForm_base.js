@@ -1,25 +1,19 @@
 ;(function($){
 	function init(form,o){
 		var name=$('.name>input',form)
-			,company=$('.company>input',form)
 			,email=$('.email>input',form)
-			,phone=$('.phone>input',form)
 			,submit=$('a[data-type="submit"]',form)
 			,msg_success=$('.success',form).hide()
 			,bl,vl
-
-		//TODO manage mailhandler
+			
 		o=$.extend({
 			ownerEmail:'#'
 			,mailHandlerURL:'bat/MailHandler-sub.php'
 		},o)
 
-
 		submit.click(function(){
 			vl=true
-			name.add(company).trigger('keyup')
 			name.add(email).trigger('keyup')
-			name.add(phone).trigger('keyup')
 			if(!$('.invalid',form).length)
 				sendRQ()
 			return false
@@ -27,10 +21,8 @@
 				
 		form[form.on?'on':'bind']('keyup',function(e){
 			if(e.keyCode===13){
-				name.add(company).data({wtch:true}).trigger('keyup')
 				name.add(email).data({wtch:true}).trigger('keyup')
-				name.add(phone).data({wtch:true}).trigger('keyup')
-				if(!$('.invalid',form).length){
+				if(!$('.invalid',form).length){					
 					sendRQ()
 					return false
 				}else{

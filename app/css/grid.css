@@ -460,3 +460,13 @@ table {
 .container:after, .container-fluid:after, .row:after {
   clear: both;
 }
+
+.gray-border {
+  background: rgba(255,255, 255, 0.15);
+  padding: 5px;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
